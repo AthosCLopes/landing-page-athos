@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fome Zero</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="header-content">
-            <h2>Fome Zero</h2>
-            <div class="header-details">
-                <span>Contato</span>
-                <span>Sobre</span>
-                <span>ODS</span>
-                <span>FAQ</span>
-            </div>
-        </div>
-    </header>
+<header>
+    <div class="header-content">
+        <h2>Fome Zero</h2>
 
-    <main>
-        <section class="hero">
-        <div class="hero-text">
-            <h1>Informações sobre locais de assistência social na região</h1>
-            <p>O objetivo da aplicação é fornecer a localização e informações sobre locais e iniciativas que fornecem serviços de assistência, como distribuição de comida, abrigos e oportunidades</p>
-            <button class="cta">Contato</button>
+        <div class="header-details">
+            <span>Contato</span>
+            <span>Sobre</span>
+            <span>ODS</span>
+            <span>FAQ</span>
         </div>
+    </div>
+</header>
 
-        <div class="hero-image">
-            <img src="https://gtagenda2030.org.br/wp-content/uploads/2019/10/ods2.jpg?w=640" alt="">
-        </div>
-        </section>
-    </main>
+<main>
+<section class="hero">
 
-    <!-- Barra inferior -->
-    <footer class="bottom-bar">
-        <div class="bottom-details">
-            <div class="detail">
-                <img src="./imgs/map.png" alt="">
-                <h5>Mapas com locais de assistência</h5>
-            </div>
-            <div class="detail">
-                <img src="./imgs/contact.png" alt="">
-                <h5>Usuários podem entrar em contato direto com os serviços por meio do app</h5>
-            </div>
-            <div class="detail">
-                <img src="./imgs/login.png" alt="">
-                <h5>Serviços podem se cadstrar e aparecer no mapa</h5>
-            </div>
-        </div>
-        
-    </footer>
+<div class="hero-text">
+<h1>Informações sobre locais de assistência social na região</h1>
 
-    </body>
-    </html>
+<p>
+O objetivo da aplicação é fornecer a localização e informações sobre locais e iniciativas
+que fornecem serviços de assistência, como distribuição de comida, abrigos e oportunidades
+</p>
+
+<a href="#contact">
+<button class="cta">Contato</button>
+</a>
+</div>
+
+<div class="hero-image">
+<img src="https://gtagenda2030.org.br/wp-content/uploads/2019/10/ods2.jpg?w=640" alt="">
+</div>
+
+</section>
+</main>
+
+<footer class="bottom-bar">
+
+<div class="bottom-details">
+
+<div class="detail">
+<img src="./imgs/map.png">
+<h5>Mapas com locais de assistência</h5>
+</div>
+
+<div class="detail">
+<img src="./imgs/contact.png">
+<h5>Usuários podem entrar em contato direto com os serviços</h5>
+</div>
+
+<div class="detail">
+<img src="./imgs/login.png">
+<h5>Serviços podem se cadastrar e aparecer no mapa</h5>
+</div>
+
+</div>
+
+<form class="contact" id="contact">
+
+<h2>Entre em contato</h2>
+
+<label for="nome">Nome</label>
+<input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="seu@email.com">
+
+<label for="question">Dúvida ou feedback</label>
+<textarea id="question" name="question" placeholder="Digite sua mensagem"></textarea>
+
+<button type="submit">Enviar mensagem</button>
+
+</form>
+
+</footer>
+
+</body>
+</html>
